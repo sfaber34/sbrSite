@@ -5,15 +5,15 @@
 @import url("./plugin/jquery.fs.tipper.css");
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 
-/* 
+/*
 * BASIC STYLE
-  - General Style    
-  - Headings Style    
-  - Button Style    
-  - Form Style    
+  - General Style
+  - Headings Style
+  - Button Style
+  - Form Style
   - Spacer Style
-      
-* HEADER 
+
+* HEADER
   - Header Style
   - Logo Style
   - Navigation Menu Style
@@ -35,7 +35,7 @@
   - Client Logo
   - Icon
   - Table
-  
+
 * GLOBAL STYLES
   - Push Menu Style ( Right Sidebar Menu )
   - Search Overlay Menu
@@ -283,7 +283,7 @@ h1 {
 }
 
     h1.h1, h2.h2 {
-        letter-spacing: 15px;
+        letter-spacing: 8px;
     }
 
 @media (max-width: 767px) {
@@ -4485,4 +4485,18 @@ ul.project-detail-block, .project-detail-block ul {
         opacity: 0;
         visibility: hidden;
     }
+}
+
+
+
+/* ----------------------------------*/
+/* Custom CSS */
+/* ----------------------------------*/
+
+.intro-container{
+  min-height: 500px;
+}
+
+.intro-content{
+  padding-top: 140px;
 }
