@@ -4498,5 +4498,15 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
 .intro-content{
-  padding-top: 140px;
+  padding-top: 90px;
+}
+
+
+
+/* ----------------------------------*/
+/* Overrides */
+/* ----------------------------------*/
+
+.lh56{
+  line-height: 56px !important;
 }

@@ -7,7 +7,7 @@ $(function () {
 
     $(window).load(function () {
 
-        // SITE PRELOADER                     ||----------- 
+        // SITE PRELOADER                     ||-----------
 
         $('#loader').fadeOut();
         $('#preloader').delay(350).fadeOut('slow');
@@ -19,7 +19,7 @@ $(function () {
 
 
     // ---------------------------------------------------------------------------------------------------------------------------->
-    // GENERAL SCRIPTS FOR ALL PAGES    ||----------- 
+    // GENERAL SCRIPTS FOR ALL PAGES    ||-----------
     // ---------------------------------------------------------------------------------------------------------------------------->
 
     $(document).ready(function () {
@@ -156,7 +156,7 @@ $(function () {
 
                     // Header Dark Light
                     headerDarkLight_with_flexslider();
-                    
+
                 },
                 start: function (slider) {
                     $('body').removeClass('loading');
@@ -241,12 +241,12 @@ $(function () {
 
         // Testimonial Slider
         $('.testimonial-carousel').owlCarousel({
-            autoPlay: true,
+            autoPlay: 9000,
             autoHeight: true,
-            stopOnHover: true,
+            stopOnHover: false,
             singleItem: true,
-            slideSpeed: 350,
-            pagination: true,  // Show pagination buttons
+            slideSpeed: 800,
+            pagination: false,  // Show pagination buttons
             navigation: false,  // Hide next and prev buttons
             navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
             //  responsive: true
