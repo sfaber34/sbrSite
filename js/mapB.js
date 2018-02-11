@@ -17,7 +17,7 @@ window.onload = function() {
   service.nearbySearch({
     location: pyrmont,
     radius: 20,
-    name: 'south boulder road liquor'
+    name: 'South Boulder Road Liquors'
   }, callback);
 };
 

@@ -96,7 +96,7 @@ $(function () {
 
         var scrolled = $(window).scrollTop();
         var windHeight = $(window).height();
-        if (scrolled > 150) {
+        if (scrolled > 40) {
             $('.header').addClass('header-prepare');
         } else {
             $('.header').removeClass('header-prepare');
@@ -733,8 +733,16 @@ $(function () {
         });
     };
 
-
-
+    var now = new Date();
+    var currentDay = now.getDay();
+    if (currentDay == 0){
+      var element = document.getElementById("day0");
+    } else if(currentDay > 0 && currentDay < 5){
+      var element = document.getElementById("day1");
+    }else{
+      var element = document.getElementById("day2");
+    }
+    element.classList.add("currentDay");
 });
 
 function launchMap() {

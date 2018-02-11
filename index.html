@@ -17,7 +17,8 @@
     <!-- CSS -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="css/font-awesome.css" rel="stylesheet" type="text/css" /> -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="css/ionicons.css" rel="stylesheet" type="text/css" />
     <link href="css/plugin/sidebar-menu.css" rel="stylesheet" type="text/css" />
     <link href="css/plugin/animate.css" rel="stylesheet" type="text/css" />
@@ -57,7 +58,7 @@
                     <ul>
                         <!-- Search Icon -->
                         <li class="">
-                            <a class="search-overlay-menu-btn header-icon" onclick="launchMap();return false;"><i class="fa fa-map-marker"></i></a>
+                            <a class="search-overlay-menu-btn header-icon" onclick="launchMap();return false;"><i class="fa fa-map-marker-alt"></i></a>
                         </li>
                         <li class="">
                             <a class="search-overlay-menu-btn header-icon" href="tel:303-926-5463"><i class="fa fa-phone"></i></a>
@@ -178,61 +179,86 @@
         <section id="about" class="wow fadeIn ptb ptb-sm-80">
             <div class="container">
                 <div class="row text-center">
-                    <div class="col-md-8 offset-md-2">
-                        <p class="lead">Integer tincidunt Cras dapibus. <a class="tipped" data-title="Sample Text" data-tipper-options='{"direction":"top"}'><b>Vivamus elementum</b></a> ultricies nisi vel augue. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante dapibus.</p>
+                    <div class="col-md-10 offset-md-1">
+                        <p class="lead">Information about South Boulder Road Liquors goes here. Integer tincidunt Cras dapibus. ultricies nisi vel augue. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante dapibus. Information about South Boulder Road Liquors goes here. Information about South Boulder Road Liquors goes here. Information about South Boulder Road Liquors goes here. Information about South Boulder Road Liquors goes here. Information about South Boulder Road Liquors goes here. Information about South Boulder Road Liquors goes here. Information about South Boulder Road Liquors goes here. Information about South Boulder Road Liquors goes here.</p>
                     </div>
                 </div>
             </div>
+            <div class="clearfix mt40"></div>
+            <div class="container">
+              <div class="row text-center">
+                <div class="col-md-4">
+                   <i class="fa fa-map-marker-alt"></i>
+                   <h4>Wines</h4>
+                   <p>
+                     Blurb about wine goes here. Blurb about wine goes here. Blurb about wine goes here. Blurb about wine goes here. Blurb about wine goes here.
+                   </p>
+                </div>
+                <div class="col-md-4">
+                   <i class="fa fa-glass-martini"></i>
+                   <h4>Spirits</h4>
+                   <p>
+                     Blurb about spirits goes here. Blurb about spirits goes here. Blurb about spirits goes here. Blurb about spirits goes here.
+                   </p>
+                </div>
+                <div class="col-md-4">
+                   <i class="fa fa-beer"></i>
+                   <h4>Beer</h4>
+                   <p>
+                     Blurb about beer goes here. Blurb about beer goes here. Blurb about beer goes here. Blurb about beer goes here. Blurb about beer goes here. Blurb about beer goes here.
+                   </p>
+                </div>
+              </div>
+            </div>
         </section>
         <!-- End About Section-->
-        <section class="map" id="map"></section>
-        <!-- End Map section -->
+
+        <hr/>
 
         <!--Contact Info Section-->
         <section id="contct-info" class="section-padding">
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-md-4 mb-sm-30 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
+                    <div class="col-md-6 mb-sm-30 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
                         <div class="alt-icon-sm-top"><i class="icon icon-basic-geolocalize-05"></i></div>
                         <h5 class="features-title">Address</h5>
-                        <p>
-                            502, DieSachbearbeiter, Schönhauser Allee,<br />
-                            167c10435 Berlin,Germany.
+                        <p onclick="launchMap();return false;">
+                            545 W South Boulder RD<br />
+                            Lafayette, CO 80026
                         </p>
                     </div>
-                    <div class="col-md-4 mb-sm-30 wow fadeIn" data-wow-delay="0.4s" data-wow-duration="2s">
+                    <div class="col-md-6 mb-sm-30 wow fadeIn" data-wow-delay="0.4s" data-wow-duration="2s">
                         <div class="alt-icon-sm-top"><i class="icon icon-basic-alarm"></i></div>
-                        <h5 class="features-title">office Hours</h5>
+                        <h5 class="features-title">Hours</h5>
                         <p>
-                            Mon - Fri : 8am to 6pm<br />
-                            Sat : 10am to 2pm
-                        </p>
-                    </div>
-                    <div class="col-md-4 mb-sm-30 wow fadeIn" data-wow-delay="0.6s" data-wow-duration="2s">
-                        <div class="alt-icon-sm-top"><i class="icon icon-basic-headset"></i></div>
-                        <h5 class="features-title">Contact</h5>
-                        <p class="contact-link">
-                            <a href="mailto:yourname@domain.com"><span class="text-bold">Email :</span> yourname@domain.com</a><br />
-                            <a><span class="text-bold">Call :</span> +40 (0) 012 345 6789</a>
+                          <span id="day1">Monday - Thursday 9:30 am - 10:45 pm</span><br/>
+                          <span id="day2">Friday & Saturday 9:30 am - 11:30 pm</span><br/>
+                          <span id="day0">Sunday 11:00 am - 6:00 pm</span>
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
+
+        <section class="map" id="map"></section>
+        <!-- End Map section -->
+
         <!-- END CONTENT ---------------------------------------------------------------------------->
 
         <!-- FOOTER -->
         <footer class="footer pt-80">
-          <div class="row">
-            <div class="col-md-3 offset-md-2 col-sm-4">
-                <ul class="social">
-                    <li><a target="_blank" href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
-                    <li><a target="_blank" href="https://instagram.com/"><i class="fa fa-instagram"></i></a></li>
-                    <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                    <li><a target="_blank" href="https://vimeo.com/"><i class="fa fa-vimeo-square"></i></a></li>
-                    <li><a target="_blank" href="https://www.behance.net/"><i class="fa fa-behance"></i></a></li>
-                </ul>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 offset-md-2 col-sm-4">
+                  <ul class="social">
+                      <li><a target="_blank" href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                      <li><a target="_blank" href="https://instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                      <li><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                      <li><a target="_blank" href="https://vimeo.com/"><i class="fa fa-vimeo-square"></i></a></li>
+                      <li><a target="_blank" href="https://www.behance.net/"><i class="fa fa-behance"></i></a></li>
+                  </ul>
+              </div>
             </div>
           </div>
             <hr />

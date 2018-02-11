@@ -190,6 +190,7 @@ p {
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
+        text-align: justify;
     }
 
     p.dark, .dark, a.dark, h1.dark, h2.dark, h3.dark, h4.dark, h5.dark, h6.dark {
@@ -1148,8 +1149,8 @@ form label.error {
 }
 
 .header-fixed .logo a {
-    width: 115px;
-    margin-top: 23px;
+    width: 198px;
+    margin-top: 14px;
     /*margin-bottom: 15px;*/
     transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
     -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
@@ -1220,9 +1221,9 @@ form label.error {
     }
 
     .header .logo a {
-        margin-top: 24px;
-        margin-bottom: 24px;
-        width: 96px;
+        margin-top: 13px;
+        margin-bottom: 13px;
+        width: 198px;
         transition: all 0.3s ease 0s;
         -o-transition: all 0.3s ease 0s;
         -moz-transition: all 0.3s ease 0s;
@@ -1241,9 +1242,9 @@ form label.error {
 }
 
     .logo a {
-        width: 190px;
+        width: 198px;
         display: block;
-        margin-top: 18px;
+        margin-top: 30px;
         /*margin-bottom: 28px;*/
         transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
         -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s;
@@ -4537,10 +4538,60 @@ ul.project-detail-block, .project-detail-block ul {
   padding-right: 10px !important;
 }
 
+
+.side-menu-btn ul li a.header-icon i{
+  font-size: 23px;
+}
+
+.testimonial p.lead{
+  text-align: center;
+}
+
+#contct-info{
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.currentDay{
+  font-weight: bold !important;
+}
+
+
+@media (max-width: 480px) {
+
+    .header .logo a {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        width: 180px;
+    }
+
+    .intro-content {
+      padding-top: 96px;
+    }
+
+    .review-wrapper {
+      bottom:85px;
+    }
+
+    .intro-content-inner h1{
+      font-size: 36px;
+    letter-spacing: 1px;
+    line-height: 47px !important;
+    }
+
+    #map {
+      height: 500px;
+    }
+}
+
 /* ----------------------------------*/
 /* Overrides */
 /* ----------------------------------*/
 
 .lh56{
   line-height: 56px !important;
+}
+
+.mt40{
+  margin-top: 40px !important;
 }
