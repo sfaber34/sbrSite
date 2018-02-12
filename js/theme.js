@@ -243,6 +243,7 @@ $(function () {
         $('.testimonial-carousel').owlCarousel({
             autoPlay: 9000,
             autoHeight: true,
+            mouseDrag: false,
             stopOnHover: false,
             singleItem: true,
             slideSpeed: 800,

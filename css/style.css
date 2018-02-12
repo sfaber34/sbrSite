@@ -130,7 +130,7 @@ br {
 hr {
     margin-bottom: 0px;
     margin-top: 0px;
-    border-top: 1px solid #f1f1f1;
+    border-top: 2px solid #f1f1f1;
     border-bottom: none;
     border-left: none;
     border-right: none;
@@ -4556,6 +4556,18 @@ ul.project-detail-block, .project-detail-block ul {
   font-weight: bold !important;
 }
 
+footer.footer{
+  padding: 30px 0px 20px 0px;
+}
+
+ul.social i{
+  font-size: 30px;
+}
+
+.liqs{
+  font-size: 20px;
+}
+
 
 @media (max-width: 480px) {
 
@@ -4594,4 +4606,8 @@ ul.project-detail-block, .project-detail-block ul {
 
 .mt40{
   margin-top: 40px !important;
+}
+
+.tar{
+  text-align: right !important;
 }
