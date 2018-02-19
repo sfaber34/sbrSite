@@ -4568,6 +4568,10 @@ ul.social i{
   font-size: 20px;
 }
 
+a.manuLink{
+  font-size: 16px;
+}
+
 
 @media (max-width: 480px) {
 
@@ -4606,6 +4610,10 @@ ul.social i{
 
 .mt40{
   margin-top: 40px !important;
+}
+
+.mb60{
+  margin-bottom: 60px !important;
 }
 
 .tar{

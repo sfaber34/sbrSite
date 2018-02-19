@@ -265,6 +265,18 @@ $(function () {
         });
     };
 
+    $('.tagFilter').click(function(){
+      var tags = $(this).closest('.tagContainer').find('.tagHolder');
+      var tagFilter=$(this).attr('tagFilter');
+      $(tags).hide();
+      for (var i=0; i<tags.length; i++){
+        var tagVal=$(tags[i]).attr('tags');
+        if (tagVal.includes(tagFilter)){
+          $(tags[i]).show();
+        }
+      }
+    });
+
     var now = new Date();
     var currentDay = now.getDay();
     if (currentDay == 0){
