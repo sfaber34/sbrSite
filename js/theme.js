@@ -78,15 +78,15 @@ $(function () {
         var scrolled = $(window).scrollTop();
         var windHeight = $(window).height();
         if (scrolled > 40) {
-            $('.header').addClass('header-prepare');
+            $('.headerDynamic').addClass('header-prepare');
         } else {
-            $('.header').removeClass('header-prepare');
+            $('.headerDynamic').removeClass('header-prepare');
         }
 
         if (scrolled > 1) {
-            $('.header').addClass('header-fixed');
+            $('.headerDynamic').addClass('header-fixed');
         } else {
-            $('.header').removeClass('header-fixed');
+            $('.headerDynamic').removeClass('header-fixed');
         }
     };
 
@@ -267,14 +267,39 @@ $(function () {
 
     $('.tagFilter').click(function(){
       var tags = $(this).closest('.tagContainer').find('.tagHolder');
+      var tagButtons = $(this).closest('.tagFilterCont').find('.tagFilter');
       var tagFilter=$(this).attr('tagFilter');
+
+      $(tagButtons).removeClass('tagSelected');
+      $(this).addClass('tagSelected');
+
       $(tags).hide();
-      for (var i=0; i<tags.length; i++){
-        var tagVal=$(tags[i]).attr('tags');
-        if (tagVal.includes(tagFilter)){
-          $(tags[i]).show();
+
+      if (tagFilter == 'All'){
+        $(tags).show();
+      } else{
+        for (var i=0; i<tags.length; i++){
+          var tagVal=$(tags[i]).attr('tags');
+          if (tagVal.includes(tagFilter)){
+            $(tags[i]).show();
+          }
         }
       }
+
+    });
+
+    $('.manuLink').click(function(e){
+      e.preventDefault();
+      var termB = '';
+      if ($(this).hasClass('wineLink')){termB = ' Wine'}
+      if ($(this).hasClass('beerLink')){termB = ' Beer'}
+      if ($(this).hasClass('whiskeyLink')){termB = ' Whiskey'}
+      if ($(this).hasClass('vodkaLink')){termB = ' Vodka'}
+      if ($(this).hasClass('tequilaLink')){termB = ' Tequila'}
+      if ($(this).hasClass('ginLink')){termB = ' Gin'}
+      var searchTerm = $(this).html();
+      var win = window.open('https://www.google.com/search?q='+searchTerm+termB+'&btnI', '_blank');
+      win.focus();
     });
 
     var now = new Date();

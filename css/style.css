@@ -4572,6 +4572,38 @@ a.manuLink{
   font-size: 16px;
 }
 
+.tagFilter{
+  display: inline-block;
+  padding: 6px;
+  border: 1px solid #888;
+  color: rgb(50,50,50);
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 4px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tagFilter.tagSelected{
+  background-color: rgb(121, 121, 121);
+  color: rgb(255, 255, 255);
+  border-color: rgb(148, 148, 148);
+}
+
+h2.overlayHeader{
+  padding: 44px 0px;
+  margin: 0px;
+  font-size: 35px;
+}
+
+.tagFilterCont{
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
 
 @media (max-width: 480px) {
 
@@ -4614,6 +4646,10 @@ a.manuLink{
 
 .mb60{
   margin-bottom: 60px !important;
+}
+
+.mb120{
+  margin-bottom: 120px !important;
 }
 
 .tar{
