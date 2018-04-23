@@ -402,7 +402,9 @@ function clickPrompt(){
 function actionType(){
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     $('.action').html('Tap');
+    $('.actionTense').html('Tapping');
   } else{
     $('.action').html('Click');
+    $('.actionTense').html('Clicking');
   }
 }

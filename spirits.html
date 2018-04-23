@@ -1327,8 +1327,38 @@
          <i class="fa fa-align-center"></i>
        </div>
 
+       <div class="quickButton" id="quickHelpButton" data-toggle="modal" data-target="#helpModal">
+         <i class="fa fa-question"></i>
+       </div>
+
     </div>
     <!-- Site Wraper End -->
+
+    <div class="modal" id="helpModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Help</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="mb30">
+              This page lists the distilleries we stock organized by spirit type. <span class="actionTense"></span> the name of a distillery will open that distillery’s website in a new page.
+            </p>
+            <p class="mb4">
+              <span class="action"></span> a tag to filter the distilleries in that category.
+            </p>
+            <img src="img/tagExample.jpg" class="tagExample mb30"/>
+            <p class="mb2 centered quickNavButtonHelpText">
+              Tap the quick nav button to show a list of spirit categories. Tap a category to automatically scroll to it.
+            </p>
+            <img src="img/quickNavButtonExample.jpg" class="quickNavButtonExample"/>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <!-- JS -->

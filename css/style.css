@@ -4596,9 +4596,9 @@ a.manuLink{
 }
 
 .tagFilter.tagSelected{
-  background-color: rgb(121, 121, 121);
+  background-color: rgb(235, 169, 63);
   color: rgb(255, 255, 255);
-  border-color: rgb(148, 148, 148);
+  border-color: #533f1f;
 }
 
 h2.overlayHeader{
@@ -4730,6 +4730,16 @@ h2.overlayHeader{
   height: 256px;
 }
 
+img.tagExample{
+  width: 188px;
+}
+
+img.quickNavButtonExample{
+  width: 56px;
+  margin: 9px auto 14px;
+  display: block;
+}
+
 @media (max-width: 480px) {
 
     .header .logo a {
@@ -4772,6 +4782,10 @@ h2.overlayHeader{
   .quickNav,
   #quickNavButton{
     visibility: hidden !important;
+  }
+  .quickNavButtonExample,
+  .quickNavButtonHelpText{
+    display: none !important;
   }
 }
 
@@ -4837,6 +4851,18 @@ h2.overlayHeader{
   margin-top: 40px !important;
 }
 
+.mb2{
+  margin-bottom: 2px !important;
+}
+
+.mb4{
+  margin-bottom: 4px !important;
+}
+
+.mb30{
+  margin-bottom: 30px !important;
+}
+
 .mb60{
   margin-bottom: 60px !important;
 }
@@ -4863,4 +4889,8 @@ h2.overlayHeader{
   -ms-transition: height 1s;
   -o-transition: height 1s;
   transition: height 1s;
+}
+
+.centered{
+  text-align: center !important;
 }
