@@ -1967,7 +1967,7 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
     overflow: hidden;
     position: relative;
     width: 100%;
-    /*background-attachment: fixed;*/
+    padding: 0px 10px;
 }
 
 .bg-fixed {
@@ -2456,12 +2456,14 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
 .quote-author {
     margin-top: 15px;
     margin-bottom: 0px;
+    text-shadow: 0px 0px 2px rgba(0,0,0,.8);
 }
 
 .google-review{
   font-size: 10px;
   font-weight: normal;
   margin-bottom: 0px;
+  text-shadow: 0px 0px 2px rgba(0,0,0,.8);
 }
 
 .google-review a{
@@ -4545,6 +4547,11 @@ ul.project-detail-block, .project-detail-block ul {
 
 .testimonial p.lead{
   text-align: center;
+  text-shadow: 0px 0px 2px rgba(0,0,0,.8);
+}
+
+.intro-content-inner h1{
+  text-shadow: 0px 0px 2px rgba(0,0,0,.5);
 }
 
 #contct-info{
@@ -4574,12 +4581,13 @@ a.manuLink{
 
 .tagFilter{
   display: inline-block;
-  padding: 6px;
-  border: 1px solid #888;
+  padding: 4px 8px;
+  border: 2px solid #888;
   color: rgb(50,50,50);
   border-radius: 8px;
   cursor: pointer;
-  margin-right: 4px;
+  margin-bottom: 5px;
+  margin-right: 0px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -4594,9 +4602,9 @@ a.manuLink{
 }
 
 h2.overlayHeader{
-  padding: 44px 0px;
+  padding: 70px 0px;
   margin: 0px;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .tagFilterCont{
@@ -4604,6 +4612,123 @@ h2.overlayHeader{
   margin-bottom: 12px;
 }
 
+.indexLink{
+  /* border: 1px solid #888; */
+  padding: 10px 10px 0px 10px;
+  border-radius: 22px;
+  -webkit-transition: background-color .35s;
+  -moz-transition: background-color .35s;
+  -ms-transition: background-color .35s;
+  -o-transition: background-color .35s;
+  transition: background-color .35s;
+}
+
+/* .indexLink:hover{
+  background-color: rgb(245,245,245);
+} */
+
+.indexLink:hover p,
+.indexLink:hover i.fa{
+  color: #323232;
+}
+
+.indexLink:hover i.fa{
+  color: #323232 !important;
+}
+
+.quickNav{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background: rgba(154, 154, 154, 0.94);
+  z-index: 30;
+  border-top: 2px solid #000000ba;
+  padding-left: 35px;
+}
+
+.quickNav p{
+  display: block;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.quickNav i.closeQuickNav{
+  color: white;
+  font-size: 22px;
+  margin: 3px 8px 0px 6px;
+  float: right;
+}
+
+.quickNav div:first-of-type{
+  margin-top:10px;
+}
+
+.quickButton{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  right: 10px;
+  display: block;
+  z-index: 30;
+  border-radius: 30px;
+  border: 2px solid #272727ba;
+}
+
+#quickNavButton{
+  bottom: 80px;
+  background: rgba(224, 158, 51, 0.72);
+}
+
+#quickHelpButton{
+  bottom: 10px;
+  background: rgba(18, 136, 210, 0.59);
+}
+
+#quickNavButton i{
+  font-size: 37px;
+  margin: 8px 0px 0px 12px;
+  color: white;
+}
+
+#quickHelpButton i{
+  font-size: 34px;
+  margin: 11px 0px 0px 15px;
+  color: white;
+}
+
+#storeFrontImg{
+    padding: 0px;
+    background-position: top center;
+    background-size: cover;
+}
+
+.dogs{
+  background-size: cover;
+}
+
+.clickPrompt{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.88);
+  z-index: 100;
+  text-align: center;
+  padding-top:100px;
+  display: none;
+}
+
+.clickPrompt i.fa{
+  font-size: 28px;
+}
+
+.clickPrompt p{
+  font-size: 20px;
+}
+
+#dogs1{
+  height: 256px;
+}
 
 @media (max-width: 480px) {
 
@@ -4630,7 +4755,75 @@ h2.overlayHeader{
     #map {
       height: 500px;
     }
+
+    .bg-image h2{
+      line-height: 49px;
+    }
+
 }
+
+@media (max-width: 991px) {
+  h2.overlayHeader{
+    padding: 44px 0px;
+  }
+}
+
+@media (min-width: 991px) {
+  .quickNav,
+  #quickNavButton{
+    visibility: hidden !important;
+  }
+}
+
+
+
+/* ----------------------------------*/
+/* Background Images */
+/* ----------------------------------*/
+
+@media (min-width: 551px) {
+  #storeFrontImg{
+    background-image: url('../img/frontB.jpg')
+  }
+
+  #vodkaImg{
+    background-image: url('../img/vodka.jpg')
+  }
+  #whiskeyImg{
+    background-image: url('../img/whiskey.jpg')
+  }
+
+  #importedWinesImg{
+    background-image: url('../img/wineRack.jpg')
+  }
+
+  #craftBeersImg{
+    background-image: url('../img/craftBeers.jpg')
+  }
+
+  #dogs1{
+    background-image: url('../img/dogs.jpg')
+  }
+}
+
+@media (max-width: 550px) {
+  #storeFrontImg{
+    background-image: url('../img/frontBSmall.jpg')
+  }
+
+  #vodkaImg{
+    background-image: url('../img/vodkaSmall.jpg')
+  }
+  #whiskeyImg{
+    background-image: url('../img/whiskeySmall.jpg')
+  }
+
+  #importedWinesImg{
+    background-image: url('../img/wineRackSmall.jpg')
+  }
+}
+
+
 
 /* ----------------------------------*/
 /* Overrides */
@@ -4654,4 +4847,20 @@ h2.overlayHeader{
 
 .tar{
   text-align: right !important;
+}
+
+.pt65{
+  padding-top: 65px !important;
+}
+
+.fw600{
+  font-weight: 600 !important;
+}
+
+.animateHeight{
+  -webkit-transition: height 1s;
+  -moz-transition: height 1s;
+  -ms-transition: height 1s;
+  -o-transition: height 1s;
+  transition: height 1s;
 }
