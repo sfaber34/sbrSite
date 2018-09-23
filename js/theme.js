@@ -1,4 +1,7 @@
 
+
+!function(t){var i=t(window);t.fn.visible=function(t,e,o){if(!(this.length<1)){var r=this.length>1?this.eq(0):this,n=r.get(0),f=i.width(),h=i.height(),o=o?o:"both",l=e===!0?n.offsetWidth*n.offsetHeight:!0;if("function"==typeof n.getBoundingClientRect){var g=n.getBoundingClientRect(),u=g.top>=0&&g.top<h,s=g.bottom>0&&g.bottom<=h,c=g.left>=0&&g.left<f,a=g.right>0&&g.right<=f,v=t?u||s:u&&s,b=t?c||a:c&&a;if("both"===o)return l&&v&&b;if("vertical"===o)return l&&v;if("horizontal"===o)return l&&b}else{var d=i.scrollTop(),p=d+h,w=i.scrollLeft(),m=w+f,y=r.offset(),z=y.top,B=z+r.height(),C=y.left,R=C+r.width(),j=t===!0?B:z,q=t===!0?z:B,H=t===!0?R:C,L=t===!0?C:R;if("both"===o)return!!l&&p>=q&&j>=d&&m>=L&&H>=w;if("vertical"===o)return!!l&&p>=q&&j>=d;if("horizontal"===o)return!!l&&m>=L&&H>=w}}}}(jQuery);
+
 var promptFlag=0;
 $(function () {
     "use strict";
@@ -13,6 +16,7 @@ $(function () {
         $('#preloader').delay(350).fadeOut('slow');
         $('body').delay(350).css({ 'overflow': 'visible' });
         clickPrompt();
+        manuLinks();
     })
 
 
@@ -28,6 +32,7 @@ $(function () {
         equalHeight();
         quickNav();
         actionType();
+        int_nav_menu_height();
         // scrollCallbackEle();
     });
 
@@ -37,6 +42,7 @@ $(function () {
         int_introHeight();
         equalHeight();
         setQuickNavPos();
+        int_nav_menu_height();
     })
 
 
@@ -47,7 +53,69 @@ $(function () {
     });
 
 
+    // ----------------------------------------------------------------
+    // Navigation Menu panel
+    // ----------------------------------------------------------------
+    var mobile_menu_icon = $(".nav-mobile");
+    var mobile_menu = $(".nav-menu");
 
+    // Mobile menu max height
+    function int_nav_menu_height() {
+        mobile_menu.css("max-height", $(window).height() - $(".header").height() - 20 + "px"), $(window).width() <= 1024 ? $(".header").addClass("mobile-device") : $(window).width() > 1024 && ($(".header").removeClass("mobile-device"))
+    };
+
+    // Mobile menu toggle icon
+    mobile_menu_icon.click(function () {
+        if (!($(this).hasClass('active'))) {
+            mobile_menu_icon.addClass('active');
+            mobile_menu.addClass('active');
+        }
+        else if ($(this).hasClass('active')) {
+            mobile_menu_icon.removeClass('active');
+            mobile_menu.removeClass('active');
+        }
+    });
+
+
+    // Dropdown Sub menu
+    var menu_Sub = $(".menu-has-sub");
+    var menu_Sub_Li;
+
+    $(".mobile-device .menu-has-sub").find(".fa:first").removeClass("fa-angle-right").addClass("fa-angle-down");
+
+    menu_Sub.click(function () {
+        if ($(".header").hasClass("mobile-device")) {
+            menu_Sub_Li = $(this).parent("li:first");
+            if (menu_Sub_Li.hasClass("menu-opened")) {
+                menu_Sub_Li.find(".sub-dropdown:first").slideUp(function () {
+                    menu_Sub_Li.removeClass("menu-opened");
+                    menu_Sub_Li.find(".menu-has-sub").find(".fa:first").removeClass("fa-angle-up").addClass("fa-angle-down");
+                });
+            }
+            else {
+                $(this).find(".fa:first").removeClass("fa-angle-down").addClass("fa-angle-up");
+                menu_Sub_Li.addClass("menu-opened");
+                menu_Sub_Li.find(".sub-dropdown:first").slideDown();
+            }
+            return false;
+        }
+        else {
+            return false;
+        }
+    });
+
+    menu_Sub_Li = menu_Sub.parent("li");
+    menu_Sub_Li.hover(function () {
+        if (!($(".header").hasClass("mobile-device"))) {
+            $(this).find(".sub-dropdown:first").stop(true, true).fadeIn("fast");
+        }
+
+    }, function () {
+        if (!($(".header").hasClass("mobile-device"))) {
+            $(this).find(".sub-dropdown:first").stop(true, true).delay(100).fadeOut("fast");
+        }
+
+    });
 
 
     // ---------------------------------------------------------------------------------------------------------------------------->
@@ -296,19 +364,19 @@ $(function () {
 
     });
 
-    $('.manuLink').click(function(e){
-      e.preventDefault();
-      var termB = '';
-      if ($(this).hasClass('wineLink')){termB = ' Wine'}
-      if ($(this).hasClass('beerLink')){termB = ' Beer'}
-      if ($(this).hasClass('whiskeyLink')){termB = ' Whiskey'}
-      if ($(this).hasClass('vodkaLink')){termB = ' Vodka'}
-      if ($(this).hasClass('tequilaLink')){termB = ' Tequila'}
-      if ($(this).hasClass('ginLink')){termB = ' Gin'}
-      var searchTerm = $(this).html();
-      var win = window.open('https://www.google.com/search?q='+searchTerm+termB+'&btnI', '_blank');
-      win.focus();
-    });
+    // $('.manuLink').click(function(e){
+    //   e.preventDefault();
+    //   var termB = '';
+    //   if ($(this).hasClass('wineLink')){termB = ' Wine'}
+    //   if ($(this).hasClass('beerLink')){termB = ' Beer'}
+    //   if ($(this).hasClass('whiskeyLink')){termB = ' Whiskey'}
+    //   if ($(this).hasClass('vodkaLink')){termB = ' Vodka'}
+    //   if ($(this).hasClass('tequilaLink')){termB = ' Tequila'}
+    //   if ($(this).hasClass('ginLink')){termB = ' Gin'}
+    //   var searchTerm = $(this).html();
+    //   var win = window.open('https://www.google.com/search?q='+searchTerm+termB+'&btnI', '_blank');
+    //   win.focus();
+    // });
 
     var now = new Date();
     var currentDay = now.getDay();
@@ -406,5 +474,38 @@ function actionType(){
   } else{
     $('.action').html('Click');
     $('.actionTense').html('Clicking');
+  }
+}
+
+function manuLinks(){
+  var termB = '';
+  $('.manuLink').each(function(){
+    if ($(this).hasClass('wineLink')){termB = ' Wine'}
+    if ($(this).hasClass('beerLink')){termB = ' Beer'}
+    if ($(this).hasClass('ciderLink')){termB = ' Hard Cider'}
+    if ($(this).hasClass('whiskeyLink')){termB = ' Whiskey'}
+    if ($(this).hasClass('vodkaLink')){termB = ' Vodka'}
+    if ($(this).hasClass('tequilaLink')){termB = ' Tequila'}
+    if ($(this).hasClass('ginLink')){termB = ' Gin'}
+    if ($(this).hasClass('spiritLink')){termB = ' Spirits'}
+    var searchTerm = $(this).html();
+    var win = 'https://www.google.com/search?q='+searchTerm+termB+'&btnI';
+    $(this).attr("href",win).attr("target","_blank");
+  })
+}
+
+var dest;
+function manuLinkClick(e){
+  e.preventDefault();
+  dest = e.currentTarget.getAttribute("href");
+  $("#navWarningModal").modal("show");
+}
+
+function navWarningModal(e){
+  if (e.currentTarget.getAttribute("id") == "ok"){
+    $("#navWarningModal").modal("hide");
+    window.open(dest,'_blank');
+  }else{
+    $("#navWarningModal").modal("hide");
   }
 }

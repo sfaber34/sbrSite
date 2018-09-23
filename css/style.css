@@ -127,6 +127,10 @@ br {
     line-height: 0;
 }
 
+p, h1, h2, h3, h4, h5, span{
+  cursor: default;
+}
+
 hr {
     margin-bottom: 0px;
     margin-top: 0px;
@@ -187,9 +191,10 @@ p {
 }
 
     p.lead, .lead {
-        font-size: 16px;
+        color: rgb(50, 50, 50);
+        font-size: 18px;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 34px;
         text-align: justify;
     }
 
@@ -528,6 +533,14 @@ button {
     width: 10px;
     min-height: 1px;
     display: inline-block;
+}
+
+.btn-mine{
+  background: rgb(220,220,220);
+}
+
+.btn-mine:hover{
+  background: rgb(200,200,200);
 }
 
 /*Form Style   ||-----------*/
@@ -2083,6 +2096,18 @@ header.header-dark.header-prepare .side-menu-btn ul li a {
 
 .footer .copyright {
     text-align: center;
+}
+
+.subFooter{
+  width: 100%;
+  padding: 0px 5px;
+}
+
+.subFooter p{
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 20px 0px 0px 0px;
 }
 
 
@@ -4564,7 +4589,7 @@ ul.project-detail-block, .project-detail-block ul {
 }
 
 footer.footer{
-  padding: 30px 0px 20px 0px;
+  padding: 30px 0px 10px 0px;
 }
 
 ul.social i{
@@ -4576,11 +4601,13 @@ ul.social i{
 }
 
 a.manuLink{
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .tagFilter{
   display: inline-block;
+  font-size: 16px;
   padding: 4px 8px;
   border: 2px solid #888;
   color: rgb(50,50,50);
@@ -4605,6 +4632,7 @@ h2.overlayHeader{
   padding: 70px 0px;
   margin: 0px;
   font-size: 40px;
+  line-height: 49px;
 }
 
 .tagFilterCont{
@@ -4623,18 +4651,19 @@ h2.overlayHeader{
   transition: background-color .35s;
 }
 
-/* .indexLink:hover{
-  background-color: rgb(245,245,245);
-} */
+.indexLink h4{
+  cursor: pointer;
+}
+
 
 .indexLink:hover p,
 .indexLink:hover i.fa{
   color: #323232;
 }
 
-.indexLink:hover i.fa{
+/* .indexLink:hover i.fa{
   color: #323232 !important;
-}
+} */
 
 .quickNav{
   position: fixed;
@@ -4673,6 +4702,7 @@ h2.overlayHeader{
   z-index: 30;
   border-radius: 30px;
   border: 2px solid #272727ba;
+  cursor: pointer;
 }
 
 #quickNavButton{
@@ -4726,8 +4756,37 @@ h2.overlayHeader{
   font-size: 20px;
 }
 
-#dogs1{
-  height: 256px;
+#dogs2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+span.simP{
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+a.bigLink:hover{
+  color: rgb(50,50,50);
+}
+
+h5.modal-title{
+  font-size: 18px;
+}
+
+.modal-body li{
+  font-size: 15px;
+}
+
+button.close span{
+  font-size: 38px;
+}
+
+.modal-body p{
+  font-size: 16px;
+  color: rgb(50,50,50);
 }
 
 img.tagExample{
@@ -4766,17 +4825,17 @@ img.quickNavButtonExample{
       height: 500px;
     }
 
-    .bg-image h2{
+    /* .bg-image h2{
       line-height: 49px;
-    }
+    } */
 
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   h2.overlayHeader{
     padding: 44px 0px;
   }
-}
+} */
 
 @media (min-width: 991px) {
   .quickNav,
@@ -4789,6 +4848,13 @@ img.quickNavButtonExample{
   }
 }
 
+@media (max-width: 767px) {
+  #dogs2{
+    margin-top: 30px;
+    max-width: 286px;
+  }
+}
+
 
 
 /* ----------------------------------*/
@@ -4797,43 +4863,105 @@ img.quickNavButtonExample{
 
 @media (min-width: 551px) {
   #storeFrontImg{
-    background-image: url('../img/frontB.jpg')
+    background-image: url('../img/frontB.jpg');
   }
 
   #vodkaImg{
-    background-image: url('../img/vodka.jpg')
+    background-image: url('../img/vodka.jpg');
   }
   #whiskeyImg{
-    background-image: url('../img/whiskey.jpg')
+    background-image: url('../img/whiskey.jpg');
+  }
+  #tequilaImg{
+    background-image: url('../img/tequila.jpg');
+  }
+  #rumImg{
+    background-image: url('../img/rum.jpg');
+  }
+  #ginImg{
+    background-image: url('../img/gins.jpg');
+  }
+  #liqueursImg{
+    background-image: url('../img/liqueurs.jpg');
   }
 
+  #americanWinesImg{
+    background-image: url('../img/americanWines.jpg');
+  }
   #importedWinesImg{
-    background-image: url('../img/wineRack.jpg')
+    background-image: url('../img/wineRack.jpg');
+  }
+  #sparklingWinesImg{
+    background-image: url('../img/sparklingWines.jpg');
   }
 
   #craftBeersImg{
-    background-image: url('../img/craftBeers.jpg')
+    background-image: url('../img/craftBeers.jpg');
   }
-
-  #dogs1{
-    background-image: url('../img/dogs.jpg')
+  #cidersImg{
+    background-image: url('../img/cider.jpg');
+  }
+  #importedBeersImg{
+    background-image: url('../img/importedBeers.jpg');
+  }
+  #domesticBeersImg{
+    background-image: url('../img/domesticBeers.jpg');
   }
 }
 
 @media (max-width: 550px) {
   #storeFrontImg{
-    background-image: url('../img/frontBSmall.jpg')
+    background-image: url('../img/frontBSmall.jpg');
+    background-attachment: scroll;
+  }
+  .testimonial p.lead{
+    line-height: 24px;
+  }
+
+  p.lead, .lead {
+    line-height: 29px;
   }
 
   #vodkaImg{
-    background-image: url('../img/vodkaSmall.jpg')
+    background-image: url('../img/vodkaSmall.jpg');
   }
   #whiskeyImg{
-    background-image: url('../img/whiskeySmall.jpg')
+    background-image: url('../img/whiskeySmall.jpg');
+  }
+  #tequilaImg{
+    background-image: url('../img/tequilaSmall.jpg');
+  }
+  #rumImg{
+    background-image: url('../img/rumSmall.jpg');
+  }
+  #ginImg{
+    background-image: url('../img/ginsSmall.jpg');
+  }
+  #liqueursImg{
+    background-image: url('../img/liqueursSmall.jpg');
   }
 
+  #americanWinesImg{
+    background-image: url('../img/americanWinesSmall.jpg');
+  }
   #importedWinesImg{
-    background-image: url('../img/wineRackSmall.jpg')
+    background-image: url('../img/wineRackSmall.jpg');
+  }
+  #sparklingWinesImg{
+    background-image: url('../img/sparklingWinesSmall.jpg');
+  }
+
+  #craftBeersImg{
+    background-image: url('../img/craftBeersSmall.jpg');
+  }
+  #cidersImg{
+    background-image: url('../img/ciderSmall.jpg');
+  }
+  #importedBeersImg{
+    background-image: url('../img/importedBeersSmall.jpg');
+  }
+  #domesticBeersImg{
+    background-image: url('../img/domesticBeersSmall.jpg');
   }
 }
 
@@ -4847,8 +4975,16 @@ img.quickNavButtonExample{
   line-height: 56px !important;
 }
 
+.mt20{
+  margin-top: 20px !important;
+}
+
 .mt40{
   margin-top: 40px !important;
+}
+
+.mt100{
+  margin-top: 100px !important;
 }
 
 .mb2{
@@ -4865,6 +5001,10 @@ img.quickNavButtonExample{
 
 .mb60{
   margin-bottom: 60px !important;
+}
+
+.mb80{
+  margin-bottom: 80px !important;
 }
 
 .mb120{

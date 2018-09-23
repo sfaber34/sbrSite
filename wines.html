@@ -18,14 +18,14 @@
     <!-- End Google Tag Manager -->
 
     <!-- Favicone Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="apple-touch-icon" href="img/favicon.png">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> -->
+    <link rel="icon" type="image/png" href="img/wineIcon.png">
+    <link rel="apple-touch-icon" href="img/wineIcon.png">
 
     <!-- CSS -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="css/plugin/animate.css" rel="stylesheet" type="text/css" />
 
 </head>
@@ -113,14 +113,6 @@
 
         <!--About Section-->
         <section id="about" class="wow fadeIn ptb pt65">
-            <!-- <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-10 offset-md-1">
-                        <p class="lead">Information about South Boulder Road Liquors goes here. Integer tincidunt Cras dapibus. ultricies nisi vel augue. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante dapibus. Information about South Boulder Road Liquors goes here. Information about South Boulder Road Liquors goes here. Information about South Boulder Road Liquors goes here. Information about South Boulder Road Liquors goes here. Information about South Boulder Road Liquors goes here. Information about South Boulder Road Liquors goes here. Information about South Boulder Road Liquors goes here. Information about South Boulder Road Liquors goes here.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix mt40"></div> -->
 
             <div class="bg-image overlay-dark dark-bg text-center" id="americanWinesImg">
               <h2 class="text-center overlayHeader">American Wines</h2>
@@ -131,721 +123,730 @@
                 <p class="tagFilter tagSelected" tagFilter="All">
                   All
                 </p>
+                <p class="tagFilter" tagFilter="Boxed">
+                  Boxed
+                </p>
+                <p class="tagFilter" tagFilter="Canned">
+                  Canned
+                </p>
                 <p class="tagFilter" tagFilter="Organic">
                   Organic
                 </p>
-                <p class="tagFilter" tagFilter="Boxed">
-                  Boxed
+                <p class="tagFilter" tagFilter="Colorado">
+                  Colorado
                 </p>
               </div>
               <div class="row mb120">
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="14handsWines">14 Hands</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" onclick="manuLinkClick(event);">14 Hands</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">3 Ball</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" onclick="manuLinkClick(event);" >3 Ball</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">7 Moons</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >7 Moons</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">A to Z</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >A to Z</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Acacia</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Almaden</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Acacia</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Apothic</a>
+                </div>
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Arbor Mist</a>
+                </div>
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Artesa</a>
+                </div>
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Artezin</a>
+                </div>
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Ava Grace</a>
+                </div>
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Avalon</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
-                  <a class="manuLink wineLink" id="IDHERE">Almaden</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Badger Mountain</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Apothic</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Arbor Mist</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Artesa</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Artezin</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Ava Grace</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Avalon</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Balistreri</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
-                  <a class="manuLink wineLink" id="IDHERE">Badger Mountain</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Banrock Station</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Balistreri</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Barefoot</a>
+                </div>
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Baron Herzog</a>
+                </div>
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Benziger</a>
+                </div>
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Beringer</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
-                  <a class="manuLink wineLink" id="IDHERE">Banrock</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Barefoot</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Baron Herzog</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Benziger</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Beringer</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Big House</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
-                  <a class="manuLink wineLink" id="IDHERE">Big House</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
-                  <a class="manuLink wineLink" id="IDHERE">Black Box</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Black Box</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Blackbird Vineyards</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Blackbird Vineyards</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Blackstone</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Bliss</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Blackstone</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Bliss</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Bogle</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Bogle</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Organic">
-                  <a class="manuLink wineLink" id="IDHERE">Bonterra</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Bonterra</a>
                 </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Book Cliff</a>
+                </div> -->
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Book Cliff</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Boomtown</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Boomtown</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
-                  <a class="manuLink wineLink" id="IDHERE">Bota Box</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Bota Box</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Bread and Butter</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Bread and Butter</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Brutocao</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Brutocao</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Buena Vista</a>
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Ca' Momi</a>
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Callaway</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Camelot</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Buena Vista</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cannonball</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Ca' Momi</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Canoe Ridge</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Callaway</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Canyon Oaks</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Camelot</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Cannonball</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Canoe Ridge</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Canyon Oaks</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Canyon Wind</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Canyon Wind</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
-                  <a class="manuLink wineLink" id="IDHERE">Carlo Rossi</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Carlo Rossi</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Carlson Vineyards</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Carlson Vineyards</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Carnivor</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Carnivor</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Casa De Campo</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Casa De Campo</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Castle Rock</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Castle Rock</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Cedar Farms</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cedar Farms</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cellar No. 8</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Charles Krug</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Cellar No. 8</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Chateau St. Jean</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Charles Krug</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Chime</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Chateau St. Jean</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Chloe</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Chime</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Chocolate Shop</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Chloe</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Christopher Michael</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Chocolate Shop</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >C.K. Mondavi</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Christopher Michael</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cline</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">C.K. Mondavi</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Clos Du Bois</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Cline</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cloud Line</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Clos Du Bois</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Columbia Crest</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Cloud Line</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Columbia Crest</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Concannon</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Concannon</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Organic">
-                  <a class="manuLink wineLink" id="IDHERE">Cono Sur</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cono Sur</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Conundrum</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Conundrum</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Cooper & Thief</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cooper & Thief</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
-                  <a class="manuLink wineLink" id="IDHERE">Corbett Canyon</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Corbett Canyon</a>
+                </div>
+                <div class="col-lg-3 col-md-4 tagHolder" tags="Canned">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Crafter's Union</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Cupcake</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cupcake</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Cycles Gladiator</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cycles Gladiator</a>
+                </div>
+                <div class="col-lg-3 col-md-4 tagHolder" tags="Canned">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Dark Horse</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Dark Horse</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Decadent Saint</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Decadent Saint</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Decoy</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Decoy</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Dona Paula</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Dona Paula</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Dreaming Tree</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Dreaming Tree</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Duckhorn</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Duckhorn</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Dynamite</a>
+                </div>
+                <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Earth Wise</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Echelon</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Emmolo</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Dynamite</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Eppa</a>
+                </div>
+                <div class="col-lg-3 col-md-4 tagHolder" tags="Canned">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Essentially Geared</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Earth Wise</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Estancia</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Echelon</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Evolucio</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Emmolo</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Fat Cat</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Federalit</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Fess Parker</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Eppa</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Fetzer</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Firefly Ridge</a>
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Firesteed</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Fish Eye</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Estancia</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Flipflop</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Evolucio</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Fog Crest</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Folie A Deux</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Four Vines</a>
+                </div>
+                <div class="col-lg-3 col-md-4 tagHolder" tags="Canned">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Francis Coppola</a>
+                </div>
+                <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Franzia</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Frost Bitten</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Geyser Peak</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Fat Cat</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Ghost Pines</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Federalit</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Gibbs</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Fess Parker</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Girasole</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Fetzer</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Glenbrook</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Firefly Ridge</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Gnarly Head</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Firesteed</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Green Truck</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Fish Eye</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Guardian</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Flipflop</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Guenoc</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Fog Crest</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Guy Drew</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Folie A Deux</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Hahn</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Four Vines</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Haraszthy</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Francis Coppola</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Hess Select</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Honey Badger</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed, Canned">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >House Wines</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Franzia</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Illahe</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Frost Bitten</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Imagery</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Geyser Peak</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Infinite Monkey Theorem</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Ironside</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >J. Lohr</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Ghost Pines</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Joel Gott</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Gibbs</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Joseph Carr</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Girasole</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Josh Cellars</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Glenbrook</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Justin</a>
                 </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Keenan</a>
+                </div> -->
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Gnarly Head</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Green Truck</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Guardian</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Guenoc</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Guy Drew</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Hahn</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Haraszthy</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Hess Select</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Honey Badger</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">House Wines</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Illahe</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Imagery</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Infinite Monkey Theorem</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Ironside</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">J. Lohr</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Joel Gott</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Joseph Carr</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Josh Cellars</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Justin</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Keenan</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Kendall Jackson</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Kendall Jackson</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Kosher">
-                  <a class="manuLink wineLink" id="IDHERE">King David</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >King David</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">King Estate</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >King Estate</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
-                  <a class="manuLink wineLink" id="IDHERE">Kingman's Big Hat</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Kingman's Big Hat</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Kunde</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Kunde</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">La Crema</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >La Crema</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">La Merika</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >La Merika</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Lago</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Lago</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Legend of the Vine</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Legend of the Vine</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Liberty Creek</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Liberty Creek</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Light Horse</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Light Horse</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Line 39</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Line 39</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Livingston Cellars</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Livingston Cellars</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
-                  <a class="manuLink wineLink" id="IDHERE">Loft</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Loft</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Lolea</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Lolea</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Lorenza</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Lost Angel</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Lorenza</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Louis Martini</a>
+                </div>
+                <div class="col-lg-3 col-md-4 tagHolder" tags="Canned">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Mancan</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Lost Angel</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Manischewitz</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Marilyn</a>
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Mark West</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Masked Rider</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Match</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Mathew Fritz</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Louis Martini</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Mancan</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Manischewitz</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Marilyn</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Mark West</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Masked Rider</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Match</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Mathew Fritz</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">McManis</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >McManis</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Colorado, Mead">
-                  <a class="manuLink wineLink" id="IDHERE">Meadery of the Rockies</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Meadery of the Rockies</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Meiomi</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Meiomi</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Menage A Trois</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Menage A Trois</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Minuty</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Minuty</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Mogen David</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Mogen David</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Murphy Goode</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Naked Grape</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Murphy Goode</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >New Age</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Naked Grape</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">New Age</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Nicole</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Nicole</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                  <a class="manuLink wineLink" id="IDHERE">Ninety Cellars</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Ninety Cellars</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Noble Vines</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Noble Vines</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Norma Jean</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Old Soul</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Norma Jean</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Old Soul</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Ounce Upon a Vine</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Once Upon a Vine</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Organic">
-                  <a class="manuLink wineLink" id="IDHERE">Orleans Hill</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Orleans Hill</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Sulfate Free">
-                  <a class="manuLink wineLink" id="IDHERE">Our Daily Red</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Our Daily Red</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">OZV</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >OZV</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Pacific Rim</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Pacific Rim</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Parducci</a>
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Peter Lehmann</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Peter Vella</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Parducci</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Pine Ridge</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Peter Lehmann</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >The Pinot Project</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Peter Vella</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Plum Creek</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Pine Ridge</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Pomelo</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">The Pinot Project</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Prisoner</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Plum Creek</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Primarius</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Rare Rose</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Rascal</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Pomelo</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Ravenswood</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Prisoner</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Recuerdo</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Primarius</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Rare Rose</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Rascal</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Ravenswood</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Recuerdo</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Redwood Creek</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Redwood Creek</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Mead">
-                  <a class="manuLink wineLink" id="IDHERE">Redstone Meadery</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Redstone Meadery</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Renwood</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Renwood</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Replica</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Replica</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Resolute</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Rex Goliath</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Resolute</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Rickshaw</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Rex Goliath</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Robert Mondavi</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Richshaw</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Run Riot</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Rutherford Hill</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Saddleback</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Robert Mondavi</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Saldo</a>
                 </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Run Riot</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Rutherford Hill</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Saddleback</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Saldo</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Salmon Run</a>
-                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Salmon Run</a>
+                </div> -->
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Organic">
-                  <a class="manuLink wineLink" id="IDHERE">Santa Julia</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Santa Julia</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Seaglass</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Seaglass</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Sebastian</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Seven Daughters</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Sheffield</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Silvan Ridge</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Sebastian</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Silver Oak</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Seven Daughters</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Simi</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Sheffield</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Skyfall</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Sledgehammer</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Slow Press</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Silvan Ridge</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Smoking Loon</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Silver Oak</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Sofia</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Solaire</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Sonoma Vineyards</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Simi</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Souverain</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Skyfall</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Spellbound</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Sledgehammer</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >St. Francis</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Slow Press</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >St. Kathryn Cellars</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Smoking Loon</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Stag's Leap</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Sofia</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Stella Rosa</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Solaire</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Stephen Vincent</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Sonoma Vineyards</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Sterling</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Stonehedge</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Sundae</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Souverain</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Sutter Home</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Spellbound</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Taylor Fladgate</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">St. Francis</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Thomas Fogarty</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Toad Hollow</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Toasted Head</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Tom Gore</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Tortoise Creek</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Treana</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Trinchero</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">St. Kathryn Cellars</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Troublemaker</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Truvee</a>
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Turning Leaf</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Twisted</a>
+                </div>
+                <div class="col-lg-3 col-md-4 tagHolder" tags="Canned">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Underwood</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Stag's Leap</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Vampire</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Stella Rosa</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Stephen Vincent</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Sterling</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Stonehedge</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Sundae</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Sutter Home</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Taylor Fladgate</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Thomas Fogarty</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Toad Hollow</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Toasted Head</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Tom Gore</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Tortoise Creek</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Treana</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Trinchero</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Troublemaker</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Truvee</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Turning Leaf</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Twisted</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Two Roads</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Underwood</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Vampire</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Velvet Devil</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Velvet Devil</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="Boxed">
-                  <a class="manuLink wineLink" id="IDHERE">Vendange</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Vendange</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Vin Vault</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Whiplash</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Vin Vault</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Willamette Valley</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Whiplash</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Woodbridge</a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >X Winery</a>
+                </div> -->
+                <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Z. Alexander Brown</a>
                 </div>
                 <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Willamette Valley</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Woodbridge</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">X Winery</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Z. Alexander Brown</a>
-                </div>
-                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                  <a class="manuLink wineLink" id="IDHERE">Zin-Phomaniac</a>
+                  <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Zin-Phomaniac</a>
                 </div>
               </div>
            </div>
@@ -858,17 +859,14 @@
                <p class="tagFilter tagSelected" tagFilter="All">
                  All
                </p>
+               <p class="tagFilter" tagFilter="Boxed">
+                 Boxed
+               </p>
                <p class="tagFilter" tagFilter="Argentina">
                  Argentina
                </p>
                <p class="tagFilter" tagFilter="Australia">
                  Australia
-               </p>
-               <p class="tagFilter" tagFilter="Austria">
-                 Austria
-               </p>
-               <p class="tagFilter" tagFilter="Brazil">
-                 Brazil
                </p>
                <p class="tagFilter" tagFilter="Chile">
                  Chile
@@ -879,17 +877,11 @@
                <p class="tagFilter" tagFilter="Germany">
                  Germany
                </p>
-               <p class="tagFilter" tagFilter="Israel">
-                 Israel
-               </p>
                <p class="tagFilter" tagFilter="Italy">
                  Italy
                </p>
                <p class="tagFilter" tagFilter="Mexico">
                  Mexico
-               </p>
-               <p class="tagFilter" tagFilter="Netherlands">
-                 Netherlands
                </p>
                <p class="tagFilter" tagFilter="New Zealand">
                  New Zealand
@@ -906,706 +898,706 @@
              </div>
              <div class="row mb120">
                <div class="col-lg-3 col-md-4 tagHolder" tags="New Zealand">
-                 <a class="manuLink wineLink" id="IDHERE">13 Celsius</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >13 Celsius</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
-                 <a class="manuLink wineLink" id="IDHERE">19 Crimes</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >19 Crimes</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Adesso</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Adesso</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Albola</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Albola</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Alto Sur</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Alto Sur</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Amalaya</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Amalaya</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Anciano</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Anciano</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Andeluna</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Andeluna</a>
                </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Chile">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Anderra</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Chile">
-                 <a class="manuLink wineLink" id="IDHERE">Anderra</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Apaltagua</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Chile">
-                 <a class="manuLink wineLink" id="IDHERE">Apaltagua</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Barone Fini</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Barone Fini</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Barone Ricasoli</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Barone Ricasoli</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Barton & Guestier</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Barton & Guestier</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Bell'agio</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Bell'agio</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Bella Sera</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Bella Sera</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Ben Marco</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Ben Marco</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="South Africa">
-                 <a class="manuLink wineLink" id="IDHERE">Big Bill</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
-                 <a class="manuLink wineLink" id="IDHERE">Black Opal</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="South Africa">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Big Bill</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Black Opal</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Bodega Elena</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Bodega Elena</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Bolla</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Bolla</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Bouchard</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Bouchard</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="New Zealand">
-                 <a class="manuLink wineLink" id="IDHERE">Brancott</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Brancott</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Brigaldara</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Broquel</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Brigaldara</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Broquel</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Campo Viejo-Rioja</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Campo Viejo-Rioja</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Campuget</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Campuget</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Candoni</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Candoni</a>
                </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Canei</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Canei</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cantine Faliesi</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Cantine Faliesi</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Caposaldo</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Caposaldo</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Portugal">
-                 <a class="manuLink wineLink" id="IDHERE">Casal Garcia</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Casal Garcia</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Catena</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Catena</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                 <a class="manuLink wineLink" id="IDHERE">Cavicchioli</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cavicchioli</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Cavit</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cavit</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Celler Masroig</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cellar Masroig</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Cesari Mara</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cesari Mara</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Chateau Grande Cassagne</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="France">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Chateau Grande Cassagne</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Netherlands">
-                 <a class="manuLink wineLink" id="IDHERE">Choco Vine</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Choco Vine</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Ciacci Piccolomini D'Aragona</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Ciacci Piccolomini D'Aragona</a>
                </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cliffhanger</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Clos De Los Siete</a>
+               </div> -->
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Concha Y Toro</a>
+               </div>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Frontera</a>
+               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cruz Garcia</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Cliffhanger</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Clos De Los Siete</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Concha Y Toro</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Frontera</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Cruz Garcia</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Da Vinci</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Da Vinci</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Germany">
-                 <a class="manuLink wineLink" id="IDHERE">Dachshund</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Dachshund</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Itlay">
-                 <a class="manuLink wineLink" id="IDHERE">Dante Rivetti</a>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Itlay">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Dante Rivetti</a>
+               </div> -->
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >De Bardos</a>
+               </div>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Di Majo Norante</a>
+               </div>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Diseno</a>
+               </div>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Dogajolo</a>
+               </div>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Dom Perignon</a>
+               </div>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Domaine Andre Brunel</a>
+               </div>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Domaine De Couron</a>
+               </div>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Domaine De Cristia</a>
+               </div>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Domaine De Pellehaut</a>
+               </div>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Domaine De Prieure</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">De Bardos</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Di Majo Norante</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Don Ramon</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Diseno</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Don Rodolfo</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Dogajolo</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Dom Perignon</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Domaine Andre Brunel</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Domaine De Couron</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Domaine De Cristia</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Domaine De Pellehaut</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Domaine De Prieure</a>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Dona Paula</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Don Ramon</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Durigutti</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Don Rodolfo</a>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Ecco Domani</a>
+               </div> -->
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Enrico Serafino</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Dona Paula</a>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Enza</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Epica</a>
+               </div> -->
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Fantini</a>
+               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Farmers of Wine</a>
+               </div> -->
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Felsina</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Durigutti</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Flaco</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Ecco Domani</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Florio</a>
                </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Folonari</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Enrico Serafino</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Gabbiano</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Enza</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Gancia</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Epica</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Fantini</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Farmers of Wine</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Felsina</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Flaco</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Florio</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Folonari</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Gabbiano</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Gancia</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Gascon</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Gascon</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                 <a class="manuLink wineLink" id="IDHERE">Gateway</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Gateway</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Portugal">
-                 <a class="manuLink wineLink" id="IDHERE">Gazela</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Gazela</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Georges Duboeuf</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Georges Duboeuf</a>
+               </div>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy, Boxed">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Gibigianna</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Gibigianna</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Giovello</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Giovello</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Portugal">
-                 <a class="manuLink wineLink" id="IDHERE">Graham's</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Graham's</a>
                </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Granera Alta</a>
+               </div> -->
+               <div class="col-lg-3 col-md-4 tagHolder" tags="New Zealand">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Hay Maker</a>
+               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Germany">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Heinz Eifel Eiswein</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Heritages</a>
+               </div> -->
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Honoro Vera</a>
+               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Hope's End</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Granera Alta</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Icardi</a>
+               </div>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Insurrection</a>
+               </div>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Jacob's Creek</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="New Zealand">
-                 <a class="manuLink wineLink" id="IDHERE">Hay Maker</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Germany">
-                 <a class="manuLink wineLink" id="IDHERE">Heinz Eifel Eiswein</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                 <a class="manuLink wineLink" id="IDHERE">Heritages</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Honoro Vera</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
-                 <a class="manuLink wineLink" id="IDHERE">Hope's End</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Kim Crawford</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Icardi</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
-                 <a class="manuLink wineLink" id="IDHERE">Insurrection</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
-                 <a class="manuLink wineLink" id="IDHERE">Jacob's Creek</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="New Zealand">
-                 <a class="manuLink wineLink" id="IDHERE">Kim Crawford</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Kris</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Kris</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >La Fiera</a>
+               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="France">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >La Jardiniere</a>
+               </div> -->
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain, Boxed">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >La Nevera</a>
+               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >La Serena</a>
+               </div> -->
+               <div class="col-lg-3 col-md-4 tagHolder" tags="France, Boxed">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >La Vielle Ferme</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">La Fiera</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Laluca</a>
+               </div>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Lamarca</a>
+               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Langhe</a>
+               </div> -->
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Layer Cake</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">La Jardiniere</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">La Nevera</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">La Serena</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Le Charmel</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">La Vielle Ferme</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Les Coteaux Tufiers</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Laluca</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Lamarca</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Langhe</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Layer Cake</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Le Charmel</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Les Coteaux Tufiers</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Les Volets</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="France">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Les Volets</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
-                 <a class="manuLink wineLink" id="IDHERE">Lindeman's</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Lindeman's</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="South Africa">
-                 <a class="manuLink wineLink" id="IDHERE">Lion's Lair</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="South Africa">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Lion's Lair</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Little Boomey</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
-                 <a class="manuLink wineLink" id="IDHERE">Little Boomey</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
-                 <a class="manuLink wineLink" id="IDHERE">Little Penguin</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Little Penguin</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Llama</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Llama</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Louis Jadot</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Louis Jadot</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Lovo</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Lovo</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Lupino</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Lupino</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Luzon Verde</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Luzon Verde</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">M. Chiarlo</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >M. Chiarlo</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                 <a class="manuLink wineLink" id="IDHERE">Manos</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Manos</a>
                </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Marques De Caceres</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Marques De Caceres</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Matsu</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Matsu</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="New Zealand">
-                 <a class="manuLink wineLink" id="IDHERE">Matua</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Matua</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Mezza Corona</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Mezza Corona</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Mia Dolcea</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Mia Dolcea</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Mocali</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Mocali</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="New Zealand">
-                 <a class="manuLink wineLink" id="IDHERE">Monkey Bay</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Monkey Bay</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Monte Antico</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Monte Antico</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Montebuena</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Montebuena</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Mouton Cadet</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Movendo</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="New Zealand">
-                 <a class="manuLink wineLink" id="IDHERE">Mud House</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="France">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Mouton Cadet</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Movendo</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="New Zealand">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Mud House</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Chile">
-                 <a class="manuLink wineLink" id="IDHERE">Natura</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Natura</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Mexico">
-                 <a class="manuLink wineLink" id="IDHERE">Nexo</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Nexo</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                 <a class="manuLink wineLink" id="IDHERE">Norton</a>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Norton</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Portugal">
-                 <a class="manuLink wineLink" id="IDHERE">Noval</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Noval</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Oraison</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Oraison</a>
                </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="New Zealand">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Otto's Constant Dream</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="New Zealand">
-                 <a class="manuLink wineLink" id="IDHERE">Otto's Constant Dream</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Oyster Bay</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="New Zealand">
-                 <a class="manuLink wineLink" id="IDHERE">Oyster Bay</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Paniza</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Parque</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Paniza</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                 <a class="manuLink wineLink" id="IDHERE">Parque</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Pata Negra</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Pata Negra</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
-                 <a class="manuLink wineLink" id="IDHERE">Penfolds</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Penfolds</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
-                 <a class="manuLink wineLink" id="IDHERE">Pepperjack</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Pertimali</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Pepperjack</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Pertimali</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Germany">
-                 <a class="manuLink wineLink" id="IDHERE">Peter Adler</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Peter Adler</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Poggio Alle Sughere</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Poggio Alle Sughere</a>
                </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Poggio Vipere</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Poquito</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Portugal">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Portas Da Herdade</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Prado Rey</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Poggio Vipere</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Poquito</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Portugal">
-                 <a class="manuLink wineLink" id="IDHERE">Portas Da Herdade</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Prado Rey</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Primaterra</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Primaterra</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Organic">
-                 <a class="manuLink wineLink" id="IDHERE">Primosole</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Primosole</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Protocolo</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Protocolo</a>
                </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Querceto</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Portugal">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Quinta De Azevedo</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Querceto</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Portugal">
-                 <a class="manuLink wineLink" id="IDHERE">Quinta De Azevedo</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Raphael Dal Bo</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Raphael Dal Bo</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Israel">
-                 <a class="manuLink wineLink" id="IDHERE">Recanati</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Recanati</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Remy Pannier</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Rioja Vega</a>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="France">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Remy Pannier</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Rioja Vega</a>
+               </div> -->
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Risata</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Risata</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Riunite</a>
                </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Rocca Delle Macie</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Rosatello</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Austria">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Rosi Mosi</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Germany">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Rudolf Muller Eiswein</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Riunite</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Ruffino</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Rocca Delle Macie</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Rosatello</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Austria">
-                 <a class="manuLink wineLink" id="IDHERE">Rosi Mosi</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Germany">
-                 <a class="manuLink wineLink" id="IDHERE">Rudolf Muller Eiswein</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Ruffino</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="South Africa">
-                 <a class="manuLink wineLink" id="IDHERE">Rust En Vrede</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="South Africa">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Rust En Vrede</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Ruta 22</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Ruta 22</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Saint Roch</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="France">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Saint Roch</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Sant'Elena</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Chile">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Santa Ema</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Sant'Elena</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Santa Margherita</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Chile">
-                 <a class="manuLink wineLink" id="IDHERE">Santa Ema</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Santa Margherita</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Santero</a>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Santero</a>
+               </div> -->
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Germany">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Schlink Haus</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Germany">
-                 <a class="manuLink wineLink" id="IDHERE">Schlink Haus</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Germany">
-                 <a class="manuLink wineLink" id="IDHERE">Schmitt Sohne</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Schmitt Sohne</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Sebino</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Sebino</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy, New Zealand, France, Germany">
-                 <a class="manuLink wineLink" id="IDHERE">The Seeker</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >The Seeker</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="France">
-                 <a class="manuLink wineLink" id="IDHERE">Selvole</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="France">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Selvole</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Skeleton</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Skeleton</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">The Spanish Quarter</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >The Spanish Quarter</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="New Zealand">
-                 <a class="manuLink wineLink" id="IDHERE">Starborough</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Starborough</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Germany">
-                 <a class="manuLink wineLink" id="IDHERE">Starling Castle</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Germany">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Starling Castle</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Organic, South Africa">
-                 <a class="manuLink wineLink" id="IDHERE">Stellar Organics</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Stellar Organics</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Sur De Los Andes</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Sur De Los Andes</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Terlato</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Terlato</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Terrazas Alto</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Terrazas Alto</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="New Zealand">
-                 <a class="manuLink wineLink" id="IDHERE">Tiki Sound</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Tiki Sound</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="New Zealand">
-                 <a class="manuLink wineLink" id="IDHERE">Tohu</a>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="New Zealand">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Tohu</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Tormaresca</a>
+               </div> -->
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Chile">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Torres</a>
+               </div>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Trapiche</a>
+               </div>
+               <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Trivento</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Tormaresca</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Trumpeter</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Chile">
-                 <a class="manuLink wineLink" id="IDHERE">Torres</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Trapiche</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Trivento</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Trumpeter</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Chile">
-                 <a class="manuLink wineLink" id="IDHERE">Undurraga</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Undurraga</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Venta Morales</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Venta Morales</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Villa Maria</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Villa Maria</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Villa Pozzi</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Villa Pozzi</a>
                </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Vina San Juan</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Vina San Juan</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Vina Temprana</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Spain">
-                 <a class="manuLink wineLink" id="IDHERE">Vina Temprana</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
-                 <a class="manuLink wineLink" id="IDHERE">Voga</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Italy">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Voga</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Wolf Blass</a>
+               </div> -->
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Wyndham Estate</a>
+               </div> -->
                <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
-                 <a class="manuLink wineLink" id="IDHERE">Wolf Blass</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
-                 <a class="manuLink wineLink" id="IDHERE">Wyndham Estate</a>
-               </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Australia">
-                 <a class="manuLink wineLink" id="IDHERE">Yellow Tail</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Yellow Tail</a>
                </div>
                <div class="col-lg-3 col-md-4 tagHolder" tags="Argentina">
-                 <a class="manuLink wineLink" id="IDHERE">Zolo</a>
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Zolo</a>
                </div>
-               <div class="col-lg-3 col-md-4 tagHolder" tags="Brazil">
-                 <a class="manuLink wineLink" id="IDHERE">Zolin</a>
-               </div>
+               <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="Brazil">
+                 <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Zolin</a>
+               </div> -->
              </div>
           </div>
 
-          <div class="bg-image overlay-dark dark-bg text-center bg-fixed mb-60" id="sparklingWinesImg">
+          <div class="bg-image overlay-dark dark-bg text-center mb-60" id="sparklingWinesImg">
             <h2 class="text-center overlayHeader">Sparkling Wines</h2>
           </div>
 
           <div class="container tagContainer">
             <div class="row mb120">
               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Andre</a>
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Andre</a>
+              </div>
+              <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Anna Cordorniu</a>
+              </div> -->
+              <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Barefoot Bubbly</a>
+              </div>
+              <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Bellavista</a>
+              </div> -->
+              <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Besserat De Bellefon</a>
+              </div> -->
+              <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Casa De Valor</a>
               </div>
               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Anna Cordorniu</a>
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Chandon</a>
               </div>
               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Barefoot Bubbly</a>
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Cook's</a>
+              </div>
+              <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Domaine Carnoros</a>
+              </div> -->
+              <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Domaine St. Michelle</a>
               </div>
               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Bellavista</a>
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Freixenete</a>
+              </div>
+              <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Gloria Ferrer</a>
+              </div> -->
+              <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Gruet</a>
               </div>
               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Besserat De Bellefon</a>
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Hi</a>
               </div>
               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Casa De Valor</a>
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >J. Roget</a>
               </div>
               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Chandon</a>
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Korbel</a>
               </div>
               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Cook's</a>
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Lunetta</a>
               </div>
               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Domaine Carnoros</a>
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Martinelli's</a>
               </div>
               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Domaine St. Michelle</a>
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Martini & Rossi</a>
               </div>
               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Freixenete</a>
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Mionetto</a>
               </div>
               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Gloria Ferrer</a>
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Moet & Chandon</a>
               </div>
               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Gruet</a>
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Mumm Napa</a>
+              </div>
+              <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Nicolas Feuillatte</a>
+              </div> -->
+              <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Segura Heredad</a>
               </div>
               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Hi</a>
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Silterra</a>
+              </div>
+              <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Torres Estelado</a>
+              </div> -->
+              <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Verdi</a>
               </div>
               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">J. Roget</a>
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Veuve Clicquot</a>
               </div>
+              <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Welch's</a>
+              </div> -->
+              <!-- <div class="col-lg-3 col-md-4 tagHolder" tags="">
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Wilson Creek</a>
+              </div> -->
               <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Korbel</a>
-              </div>
-              <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Lunetta</a>
-              </div>
-              <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Martinelli's</a>
-              </div>
-              <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Martini & Rossi</a>
-              </div>
-              <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Mionetto</a>
-              </div>
-              <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Moet & Chandon</a>
-              </div>
-              <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Mumm Napa</a>
-              </div>
-              <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Nicolas Feuillatte</a>
-              </div>
-              <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Segura Heredad</a>
-              </div>
-              <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Silterra</a>
-              </div>
-              <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Torres Estelado</a>
-              </div>
-              <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Verdi</a>
-              </div>
-              <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Veuve Clicquot</a>
-              </div>
-              <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Welch's</a>
-              </div>
-              <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Wilson Creek</a>
-              </div>
-              <div class="col-lg-3 col-md-4 tagHolder" tags="">
-                <a class="manuLink wineLink" id="IDHERE">Zardetto</a>
+                <a class="manuLink wineLink" onclick="manuLinkClick(event);" >Zardetto</a>
               </div>
             </div>
          </div>
@@ -1658,6 +1650,11 @@
               <div class="col-md-6 col-sm-8">
                 <p class="tar">
                     © 2018 <b>South Boulder Road Liquors</b>. All Rights Reserved.
+                </p>
+              </div>
+              <div class="subFooter">
+                <p>
+                  *All registered trademarks appearing on this website are the sole property of their respective owners.
                 </p>
               </div>
             </div>
@@ -1721,18 +1718,24 @@
       </div>
     </div>
 
+    <div class="modal" id="navWarningModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p class="mb60 mt20 centered">
+              A new tab will open with more information.
+            </p>
+            <button type="button" class="btn btn-md btn-mine" id="cancel" onclick="navWarningModal(event)">Cancel</button>
+            <button type="button" class="btn btn-md btn-mine" id="ok" onclick="navWarningModal(event)" style="float:right;">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- JS -->
-    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
-    <script src="js/plugin/jquery.easing.js" type="text/javascript"></script>
-    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/plugin/jquery.viewportchecker.js" type="text/javascript"></script>
-    <script src="js/plugin/jquery.stellar.min.js" type="text/javascript"></script>
-    <script src="js/plugin/wow.min.js" type="text/javascript"></script>
+    <script src="js/combined.js" type="text/javascript"></script>
     <script src="js/plugin/owl.carousel.min.js" type="text/javascript"></script>
     <script src="js/theme.js" type="text/javascript"></script>
-    <script src="js/navigation.js" type="text/javascript"></script>
-    <script src="js/jquery.visible.min.js" type="text/javascript"></script>
 
 </body>
 </html>
