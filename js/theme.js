@@ -118,37 +118,6 @@ $(function () {
     });
 
 
-    // ---------------------------------------------------------------------------------------------------------------------------->
-    // SCROLL FUNCTIONS   ||-----------
-    // ---------------------------------------------------------------------------------------------------------------------------->
-
-    // function scroll() {
-    //
-    //     $('.scroll-top').click(function () {
-    //         $('html, body').animate({ scrollTop: 0 }, 800);
-    //         return false;
-    //     });
-    //
-    //     // Scroll Down Elements
-    //     $('.scroll-down[href^="#"], .scroll-to-target[href^="#"]').on('click', function (e) {
-    //         e.preventDefault();
-    //
-    //         var target = this.hash;
-    //         var $target = $(target);
-    //
-    //         $('html, body').stop().animate({
-    //             'scrollTop': $target.offset().top
-    //         }, 900, 'swing', function () {
-    //             window.location.hash = target;
-    //         });
-    //     });
-    //
-    // };
-
-
-    // ---------------------------------------------------------------------------------------------------------------------------->
-    // STICKY HEADER FUNCTIONS   ||-----------
-    // ---------------------------------------------------------------------------------------------------------------------------->
     function stickHeader() {
 
         var scrolled = $(window).scrollTop();
@@ -187,9 +156,6 @@ $(function () {
     });
 
 
-    // ---------------------------------------------------------------------------------------------------------------------------->
-    // SLIDER FUNCTIONS   ||-----------
-    // ---------------------------------------------------------------------------------------------------------------------------->
 
     function sliderAll() {
 
@@ -209,91 +175,6 @@ $(function () {
 
 
     };
-
-    // ---------------------------------------------------------------------------------------------------------------------------->
-    // SCROLL CALLBACK FUNCTION  ||-----------
-    // ---------------------------------------------------------------------------------------------------------------------------->
-    // function scrollCallbackEle() {
-    //     //scroll Callback Element
-    //     $('.load-ele-fade').viewportChecker({
-    //         classToAdd: 'visible animated fadeIn',
-    //         offset: 100,
-    //         callbackFunction: function (elem, action) {
-    //         }
-    //     });
-    //
-    //     $(function () {
-    //
-    //         //scroll Animate Element
-    //         var wow = new WOW({
-    //             boxClass: 'wow',
-    //             animateClass: 'animated',
-    //             offset: 0,
-    //             mobile: false,
-    //             live: true
-    //         })
-    //         wow.init();
-    //     });
-    // };
-
-
-    // ----------------------------------------------------------------
-    // Parallax Function element
-    // ----------------------------------------------------------------
-
-    // Parallax Function element
-    // $('.parallax').each(function () {
-    //     var $el = $(this);
-    //     $(window).scroll(function () {
-    //         parallax($el);
-    //     });
-    //     parallax($el);
-    // });
-    //
-    //
-    // function parallax($el) {
-    //     var diff_s = $(window).scrollTop();
-    //     var parallax_height = $('.parallax').height();
-    //     var yPos_p = (diff_s * 0.5);
-    //     var yPos_m = -(diff_s * 0.5);
-    //     var diff_h = diff_s / parallax_height;
-    //
-    //     if ($('.parallax').hasClass('parallax-section1')) {
-    //         $el.css('top', yPos_p);
-    //     }
-    //     if ($('.parallax').hasClass('parallax-section2')) {
-    //         $el.css('top', yPos_m);
-    //     }
-    //     if ($('.parallax').hasClass('parallax-static')) {
-    //         $el.css('top', (diff_s * 1));
-    //     }
-    //     if ($('.parallax').hasClass('parallax-opacity')) {
-    //         $el.css('opacity', (1 - diff_h * 1));
-    //     }
-    //
-    //     if ($('.parallax').hasClass('parallax-background1')) {
-    //         $el.css("background-position", 'left' + " " + yPos_p + "px");
-    //     }
-    //     if ($('.parallax').hasClass('parallax-background2')) {
-    //         $el.css("background-position", 'left' + " " + -yPos_p + "px");
-    //
-    //     }
-    // };
-
-    // var parallaxPositionProperty;
-    // if ($(window).width() >= 1024) {
-    //     parallaxPositionProperty = "position";
-    // } else {
-    //     parallaxPositionProperty = "transform";
-    // }
-    //
-    // // Parallax Stellar Plugin element
-    // $('body').stellar({
-    //     responsive: true,
-    //     positionProperty: parallaxPositionProperty,
-    //     horizontalScrolling: false
-    //
-    // });
 
 
 
@@ -364,19 +245,6 @@ $(function () {
 
     });
 
-    // $('.manuLink').click(function(e){
-    //   e.preventDefault();
-    //   var termB = '';
-    //   if ($(this).hasClass('wineLink')){termB = ' Wine'}
-    //   if ($(this).hasClass('beerLink')){termB = ' Beer'}
-    //   if ($(this).hasClass('whiskeyLink')){termB = ' Whiskey'}
-    //   if ($(this).hasClass('vodkaLink')){termB = ' Vodka'}
-    //   if ($(this).hasClass('tequilaLink')){termB = ' Tequila'}
-    //   if ($(this).hasClass('ginLink')){termB = ' Gin'}
-    //   var searchTerm = $(this).html();
-    //   var win = window.open('https://www.google.com/search?q='+searchTerm+termB+'&btnI', '_blank');
-    //   win.focus();
-    // });
 
     var now = new Date();
     var currentDay = now.getDay();
