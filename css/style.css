@@ -244,6 +244,11 @@ p {
         color: #323232;
     }
 
+p.actionCall{
+  font-weight: 600;
+  line-height: 45px !important;
+}
+
 
 /*Headings Style   ||-----------*/
 
@@ -4738,6 +4743,7 @@ h2.overlayHeader{
   z-index: 100;
   text-align: center;
   padding-top:100px;
+  padding-right: 30px;
   display: none;
 }
 
@@ -4790,6 +4796,14 @@ img.quickNavButtonExample{
   width: 56px;
   margin: 9px auto 14px;
   display: block;
+}
+
+.hoverPointer{
+  cursor: pointer !important;
+}
+
+.lightGrey{
+  color: rgb(136,136,136);
 }
 
 @media (max-width: 480px) {
@@ -4990,6 +5004,10 @@ img.quickNavButtonExample{
 
 .mb30{
   margin-bottom: 30px !important;
+}
+
+.mb40{
+  margin-bottom: 40px !important;
 }
 
 .mb60{

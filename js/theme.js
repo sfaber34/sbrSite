@@ -329,8 +329,8 @@ function setQuickNavPos(){
 function clickPrompt(){
   if($('#clickPromptTarget').visible() && promptFlag==0){
     promptFlag=1;
-    $('.clickPrompt').fadeIn(500, function() {
-      $('.clickPrompt').delay(2000).fadeOut(500);
+    $('.clickPrompt').fadeIn(400, function() {
+      $('.clickPrompt').delay(2000).fadeOut(200);
     });
   }
 }
@@ -362,15 +362,22 @@ function manuLinks(){
   })
 }
 
+var manuWarningFlag = 1;
 var dest;
 function manuLinkClick(e){
-  e.preventDefault();
   dest = e.currentTarget.getAttribute("href");
-  $("#navWarningModal").modal("show");
+  if (manuWarningFlag == 1){
+    e.preventDefault();
+    $("#navWarningModal").modal("show");
+  } else{
+    window.open(dest,'_blank');
+  }
 }
+
 
 function navWarningModal(e){
   if (e.currentTarget.getAttribute("id") == "ok"){
+    manuWarningFlag = 0;
     $("#navWarningModal").modal("hide");
     window.open(dest,'_blank');
   }else{
